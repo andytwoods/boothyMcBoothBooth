@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- load css -->
+
+    <!-- load script -->
+
+
+    <link href="{% static 'videojs.record.min.css' %}" rel="stylesheet">
+    <link href="{% static 'videojs.min.css' %}" rel="stylesheet">
+
+    <script src="{% static 'RecordRTC.js' %}"></script>
+    <script src="{% static 'adapter.js' %}"></script>
+    <script src="{% static 'video.min.js' %}"></script>
+    <script src="{% static 'videojs.record.min.js' %}"></script>
+
+    <style>
+        body {
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #f5f5f5;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1e1e1e;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+{% block body %}
+
+{% endblock body %}
+
+</body>
+</html>
